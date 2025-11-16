@@ -13,4 +13,13 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  publicDir: 'public',
 })
